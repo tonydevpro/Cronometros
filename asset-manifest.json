@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//tonydevpro.github.io/Cronometros/static/css/main.d8f251f5.css",
+    "main.js": "//tonydevpro.github.io/Cronometros/static/js/main.bce9edc4.js",
+    "static/js/488.08e3c6fa.chunk.js": "//tonydevpro.github.io/Cronometros/static/js/488.08e3c6fa.chunk.js",
+    "index.html": "//tonydevpro.github.io/Cronometros/index.html",
+    "main.d8f251f5.css.map": "//tonydevpro.github.io/Cronometros/static/css/main.d8f251f5.css.map",
+    "main.bce9edc4.js.map": "//tonydevpro.github.io/Cronometros/static/js/main.bce9edc4.js.map",
+    "488.08e3c6fa.chunk.js.map": "//tonydevpro.github.io/Cronometros/static/js/488.08e3c6fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8f251f5.css",
+    "static/js/main.bce9edc4.js"
+  ]
+}
