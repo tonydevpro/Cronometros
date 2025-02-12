@@ -1,0 +1,156 @@
+/* App.css */
+
+/* Estilo geral da aplicação */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #d1d1d1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.geral {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.geral:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do display do contador */
+.display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 20px 0;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap; /* Evita quebra de linha */
+}
+
+.display h1 {
+  margin: 0;
+  font-size: inherit;
+}
+
+/* Estilo dos botões */
+.bt {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
+}
+
+.bt button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  flex: 1 1 auto; /* Faz os botões se ajustarem ao espaço disponível */
+}
+
+.bt button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bt button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo específico para o botão de limpar */
+.bt button:nth-child(3) {
+  background-color: #dc3545;
+}
+
+.bt button:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+/* Estilo do menu do timer */
+.menuTimer {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.menuTimer input {
+  width: 80%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menuTimer input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.menuTimer .btMenu {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 1rem;
+}
+
+.menuTimer .btMenu:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menuTimer .btMenu:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+  .display {
+    font-size: 2.5rem; /* Tamanho menor para telas pequenas */
+  }
+
+  .bt button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    flex: 1 1 100%; /* Botões ocupam toda a largura em telas pequenas */
+  }
+
+  .menuTimer input {
+    width: 90%;
+  }
+}
